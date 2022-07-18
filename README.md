@@ -1,3 +1,3 @@
 # M01S02
-Pequenos em java
+Pequenos programas em java
  
