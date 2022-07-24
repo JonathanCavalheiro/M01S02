@@ -45,7 +45,7 @@ public class ContaBancoPixTed {
                         double taxaPix = 1.50;
                         double valorFinalPix = valorTransf + taxaPix;
                         if (valorFinalPix > saldo) {
-                            System.out.println("Saldo insuficiente, valor total da transferencia com a taxa é de R$" +valorFinalPix+" e" +
+                            System.out.println("Saldo insuficiente, valor total da transferencia com a taxa de R$"+taxaPix+" fica R$" +valorFinalPix+" e" +
                                     "seu saldo é de R$"+saldo);
                             break;
                         } else {
@@ -60,12 +60,12 @@ public class ContaBancoPixTed {
                         double taxaTed = 9.80;
                         double valorfinal = (valorTed + taxaTed);
                             if (valorfinal > saldo){
-                                System.out.println("Saldo insuficiente, valor total da transferencia com taxa é de" +
-                                        " R$"+valorfinal+ " e seu saldo é de " + "R$"+saldo);
+                                System.out.println("Saldo insuficiente, valor total da transferencia com a taxa de" +
+                                        " R$"+taxaTed+ " fica R$"+valorfinal + " e seu saldo é de R$"+saldo);
                             } else {
                                 double valorAposTed = (saldo - valorTed) - taxaTed;
                                 System.out.println("Transferencia feita!! Foi descontado do saldo R$"+valorTed+" mais R$"+taxaTed+" de taxa" +
-                                        " e seu saldo atua ficou R$"+valorAposTed);
+                                        " e seu saldo atual ficou R$"+valorAposTed);
                             }
 
 
